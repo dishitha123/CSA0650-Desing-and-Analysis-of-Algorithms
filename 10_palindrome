@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	printf("Dishitha-192211436\n");
+	char str[100];
+	int counter=0,i;
+	printf("enter the string");
+	scanf("%s",str);
+	int length=strlen(str);
+	for(i=0;i<length;i++)
+	{
+		if(str[0]==str[length-1])
+		{
+			counter+=1;
+		}
+	}
+	if(counter!=0)
+	{
+		printf("palindrome");
+	}
+	else
+	{
+		printf("not");
+	}
+}
