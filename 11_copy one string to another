@@ -1,0 +1,18 @@
+#include <stdio.h>
+void copy_string(char source[], char destination[]) {
+    int i = 0;
+    while (source[i] != '\0') {
+        destination[i] = source[i];
+        i++;
+    }
+    destination[i] = '\0';
+}
+int main() {
+	printf("Dishitha-192211436\n");
+    char source[100], destination[100];
+    printf("Enter a string: ");
+    scanf("%s", source);
+    copy_string(source, destination);
+    printf("Copied string: %s\n", destination);
+    return 0;
+}
