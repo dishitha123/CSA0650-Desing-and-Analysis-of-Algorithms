@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	printf("Dishitha-192211436\n");
+	int n,arm=0,rem,m;
+	printf("enter the number");
+	scanf("%d",&n);
+	m=n;
+	while(n>0)
+	{
+		rem=n%10;
+		arm=arm+rem*rem*rem;
+		n=n/10;
+	}
+	if(arm==m)
+	{
+		printf("armstrong");
+	}
+	else
+	{
+		printf("not armstrong");
+	}
+}
